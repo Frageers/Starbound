@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #B73ACB, #2B2D9C);
     color: white;
+    
 }
 header {
     position: fixed;
@@ -12,9 +12,8 @@ header {
     justify-content: space-between;
     padding: 18px 28px;
     z-index: 60;
-
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), transparent);
-    backdrop-filter: blur(6px)
+    color: black;
+    background-color: white;
 }
 
 .logo {
@@ -44,7 +43,7 @@ nav {
 }
 
 nav a {
-  color: #fff;
+  color: black;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.6px;
@@ -107,8 +106,6 @@ nav a:hover {
   gap: 12px;
   padding: 12px;
   border-radius: 8px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.02), transparent);
-  border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 .module .num {
@@ -119,5 +116,171 @@ nav a:hover {
   place-items: center;
   background: rgba(255, 255, 255, 0.04);
   font-weight: 700;
-  color: var(--cyan);
+  color: cyan;
+}
+
+.hero{
+  position: relative;
+  height: 50vh;
+  background-image: url('background.jpeg');
+  background-size: cover;
+  background-position: center;
+  margin-top: 75px;
+}
+
+.heroContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.heroContent p {
+  font-size: 1.5rem;
+  margin-top: 12px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: indigo;
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: 0.25s;
+}
+
+.btn-primary:hover {
+    background-color: #ff4b4b;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 80px 50px;
+    gap: 0px;
+    background-color: #f5f5f5;
+}
+
+.highlight-card {
+    padding: 30px;
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.highlight-card h2 {
+    margin-bottom: 15px;
+    color: #2B2D9C;
+}
+
+
+.highlight-card a {
+    text-decoration: none;
+    color: #B73ACB;
+    font-weight: bold;
+}
+
+.highlight-card a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1b1b2f; /* or transparent if you prefer */
+    padding: 2px 0;
+    text-align: center;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* space between icons */
+}
+
+footer .social-links a img {
+    transition: transform 0.3s;
+}
+
+footer .social-links a img:hover {
+    transform: scale(1.2); /* hover effect */
+}
+
+.about-page {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.mission h1 {
+  font-size: 2rem;
+  color: #2b2d9c;
+  margin-bottom: 20px;
+}
+
+.mission p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.team-member {
+  background-color: orange;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  margin: 10px 0 5px 0;
+  color: #2b2d9c;
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.team-member .circle{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 15px auto;
+  position: relative;
+}
+
+#Advika {
+  position: absolute;
+  top: px;
+  left: 0.5px;
+  width: 120px;
+  height: auto;
+}
+
+#Saransh {
+  position: absolute;
+  top: 0.5px;
+  left: -0.5px;
+  width: 120px;
+  height: auto;
 }
