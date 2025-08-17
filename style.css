@@ -284,3 +284,50 @@ footer .social-links a img:hover {
   width: 120px;
   height: auto;
 }
+
+.dropdown{
+  position: relative;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: orange;
+  min-width: 150px;
+  border: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0,0.15);
+  z-index: 50;
+  flex-direction: column;
+}
+
+.dropdownContent a{
+  display: block;
+  padding: 10px 15px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dropdown:hover .dropdownContent {
+  display: flex;
+}
+
+.dropdownContent a:hover{
+  color: white;
+}
+
+#volunteer{
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: indigo;
+  color: white;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: 0.25s;
+}
+
+#volunteer:hover {
+  background-color: #ff4b4b;
+}
